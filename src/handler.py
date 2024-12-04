@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 def handler(job):
     """Scrape webpage content from the provided URL in job.input"""
 
-    url = job['input']
+    url = job['input']['url']
     
     # Send a GET request to the URL
     response = requests.get(url)
